@@ -17,26 +17,26 @@ pipeline {
         }
         stage('Stage 3') {
             steps {
-                sh "ls -lF .."
                 echo 'Step 3'
+                sh "ls -lF .."
             }
         }
         stage('Stage 4') {
             steps {
-                sh "ls -lF /"
                 echo 'Step 4'
+                sh "ls -lF /"
             }
         }
         stage('Stage 5') {
             steps {
-                sh "ls -lF /bin"
                 echo 'Step 5'
+                sh "ls -lF /bin"
             }
         }
         stage('Stage 6') {
             steps {
-                sh "java -version"
                 echo 'Step 6'
+                sh "java -version"
             }
         }
     }
